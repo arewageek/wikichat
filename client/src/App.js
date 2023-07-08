@@ -22,16 +22,26 @@ function App() {
   const makeReq = async (content) => {
     
     const baseUrl = `http://localhost:5000?prompt=${content}`
-    
-    const response = await fetch(baseUrl,{
-      method: 'GET',
+
+    axios.get(baseUrl, {
       headers: {
-        'Content-Type': 'application/json',
+        'Content-Type': 'application/json'
       },
-    });
+    }).then(res => {
+      const result = JSON.stringify(res.data.text)
+      setResponses(prev => [...prev, result.replace('?', '')])
+    })
     
-    console.log(baseUrl)
-    const data = await response.json()
+    
+    // const response = await fetch(baseUrl,{
+    //   method: 'GET',
+    //   headers: {
+    //     'Content-Type': 'application/json',
+    //   },
+    // });
+    
+    // console.log(baseUrl)
+    // const data = await response.json()
   }
   
   return (

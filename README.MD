@@ -15,7 +15,3 @@ Using the OpenAI API and the power of GPT-3 or Davinci engine, the chatbot can e
 - **Easy Integration:** Can be seamlessly integrated with various platforms, including WhatsApp, to provide a user-friendly experience.
 
 Whether users need assistance with literature review, fact-checking, concept exploration, or general research guidance, this research assistant chatbot aims to streamline the research process and help users make informed decisions.
-
-
-
-# ANYONE IS WELCOME TO COLLABORATE AND HELP FIX THIS CORS ERROR
