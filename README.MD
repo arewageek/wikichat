@@ -18,4 +18,4 @@ Whether users need assistance with literature review, fact-checking, concept exp
 
 
 
-* ANYONE IS WELCOME TO COLLABORATE AND HELP FIX THIS CORS ERROR
+# ANYONE IS WELCOME TO COLLABORATE AND HELP FIX THIS CORS ERROR
