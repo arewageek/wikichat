@@ -1,9 +1,15 @@
 from flask import Flask, request, jsonify
 import openai
+import os
+
 
 # configurations
 app = Flask(__name__)
-openai.api_key = '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'
+
+API_KEY = os.getenv('OPENAI_API_KEY')
+
+openai.api_key = API_KEY
+
 
 @app.after_request
 def add_cors_headers(response):
